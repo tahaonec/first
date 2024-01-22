@@ -1,0 +1,19 @@
+InterFace:
+    TextInput:
+        id: textInput
+        multiline:False
+        size_hint: .5, None
+        height: 50
+        pos_hint: {"center_x":.5, "top":0.6}
+        hint_text: '0'
+        on_text_validate: root.print_msg()
+    Label:
+        id: label
+        text:'Hello World!'
+        size_hint: .5,.1
+        pos_hint: {"center_x":.5, "top":0.4}
+    Button:
+        text:'Click Me'
+        size_hint: .5,.1
+        pos_hint: {"center_x":.5, "top":0.2}
+        on_press:root.print_msg()
